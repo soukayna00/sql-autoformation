@@ -1,0 +1,4 @@
+USE employees ;
+-- boolean expression
+SELECT * FROM manager
+WHERE Age = 10; 
