@@ -1,9 +1,7 @@
  USE operators;
- CREATE TABLE CUSTOMERS(
-   ID   INT AUTO_INCREMENT  NOT NULL,
-   NAME VARCHAR (20)     NOT NULL,
-   AGE  INT              NOT NULL,
-   ADDRESS  CHAR (25) ,
-   SALARY   DECIMAL (18, 2),       
-   PRIMARY KEY (ID)
-)
+CREATE TABLE Produit(
+    Id int NOT NULL AUTO_INCREMENT,
+    Nom varchar (255) ,
+    Couleur varchar (255) ,
+    Poids int (255)
+    );
