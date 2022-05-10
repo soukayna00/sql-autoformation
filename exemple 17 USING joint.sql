@@ -1,3 +1,14 @@
 USE employees;
 SELECT ID,LastName,FirstName,Id_customers,SALARY FROM orders,manager
 WHERE orders.ID_customers=manager.ID;
+
+--inner join
+SELECT  ID, NAME, AMOUNT, DATE
+   FROM CUSTOMERS
+   INNER JOIN ORDERS
+   ON CUSTOMERS.ID = ORDERS.CUSTOMER_ID;
+---left join
+SELECT  ID, NAME, AMOUNT, DATE
+   FROM CUSTOMERS
+   LEFT JOIN ORDERS
+   ON CUSTOMERS.ID = ORDERS.CUSTOMER_ID;
