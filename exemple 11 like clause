@@ -2,3 +2,9 @@ USE operators;
 
 SELECT * FROM customers
 WHERE SALARY LIKE '200%';
+
+
+
+--selects les elements qui termine par un digit (20001/2/3/4/5/6/7/8/9/0)
+SELECT * FROM customers
+WHERE SALARY LIKE '200_';

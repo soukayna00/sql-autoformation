@@ -10,3 +10,13 @@ INSERT INTO manager (ID,LastName,FirstName,Age)values('3','EEE','FFF','13');
 
 SELECT * FROM manager
 WHERE Age>12;
+
+-- /////////////////////////////////////////////////////////////////////////////////
+-- nouvelle base donnée
+
+USE CUSTOMERS;
+SELECT * FROM CUSTOMERS WHERE SALARY > 5000;
+SELECT * FROM CUSTOMERS WHERE SALARY = 2000;
+ SELECT * FROM CUSTOMERS WHERE SALARY != 2000;
+ SELECT * FROM CUSTOMERS WHERE SALARY < 2000;
+ SELECT * FROM CUSTOMERS WHERE SALARY >= 6500;
