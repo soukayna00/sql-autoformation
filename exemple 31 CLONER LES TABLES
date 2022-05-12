@@ -1,0 +1,20 @@
+USE tuto;
+--etape 1 on montre les donnée de la table qu'on veut cloner
+SHOW CREATE TABLE customers;
+--etape 2 on renomme la table
+ CREATE TABLE 'clone_tbl' ( 
+  'tutorial_id' int(11) NOT NULL auto_increment, 
+  'tutorial_title' varchar(100) NOT NULL default '', 
+  'tutorial_author' varchar(40) NOT NULL default '', 
+  'submission_date' date default NULL, 
+  PRIMARY KEY  ('tutorial_id'), 
+  UNIQUE KEY 'AUTHOR_INDEX' ('tutorial_author') 
+)
+--etape 3 on insert les memes valeurs
+INSERT INTO CLONE_TBL (tutorial_id, 
+   ->                        tutorial_title, 
+   ->                        tutorial_author, 
+   ->                        submission_date) 
+   -> SELECT tutorial_id,tutorial_title, 
+   ->        tutorial_author,submission_date, 
+   -> FROM TUTORIALS_TBL; 
