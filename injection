@@ -1,0 +1,10 @@
+
+ <!-- le nom est limité aux caractères alphanumériques plus trait de 
+ soulignement et à une longueur comprise entre 8 et 20 caractères  -->
+
+if (preg_match("/^\w{8,20}$/", $_GET['username'], $matches)) {
+   $result = mysql_query("SELECT * FROM CUSTOMERS 
+      WHERE name = $matches[0]");
+} else {
+   echo "user name not accepted";
+}

@@ -1,0 +1,3 @@
+ -- on utilise distinct pour annuler les duplications
+ SELECT DISTINCT SALARY FROM CUSTOMERS
+    ORDER BY SALARY;
