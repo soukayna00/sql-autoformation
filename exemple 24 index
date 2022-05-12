@@ -1,0 +1,4 @@
+-- create index named info personelle dans la table customer
+-- pour  les colonnes id et name
+USE tuto;
+CREATE INDEX info_personnelle ON customers (ID,NAME);

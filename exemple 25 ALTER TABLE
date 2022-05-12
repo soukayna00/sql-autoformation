@@ -1,0 +1,23 @@
+-- ADD NEW COLUMN
+USE tuto;
+ALTER TABLE customers ADD CIN VARCHAR (200);
+
+-- to change data type
+USE tuto;
+ALTER TABLE customers MODIFY COLUMN CIN int(50);
+
+-- add not null
+USE tuto;
+ALTER TABLE customers MODIFY CIN int NOT NULL;
+
+-- add unique contrainte
+-- you should name the containts if you are going to add  containts 
+-- to multiple COLUMNS
+USE tuto;
+ALTER TABLE customers ADD CONSTRAINT information UNIQUE (ID,NAME);
+-- ADD  check contrainte 
+USE tuto;
+ALTER TABLE customers ADD CONSTRAINT infor  CHECK (AGE>20);
+-- ADD primary key
+USE tuto;
+ALTER TABLE customers ADD CONSTRAINT ids PRIMARY KEY (ID);
