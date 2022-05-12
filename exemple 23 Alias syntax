@@ -1,0 +1,8 @@
+-- as change the name of table or row temporary
+SELECT C.ID, C.NAME, C.AGE, O.AMOUNT 
+   FROM CUSTOMERS AS C, ORDERS AS O
+   WHERE  C.ID = O.CUSTOMER_ID;
+  --  another simplified example
+  SELECT  ID AS CUSTOMER_ID, NAME AS CUSTOMER_NAME
+   FROM CUSTOMERS
+   WHERE SALARY IS NOT NULL;
