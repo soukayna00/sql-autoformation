@@ -1,0 +1,6 @@
+--create view
+USE tuto;
+CREATE VIEW customers_VIEW AS SELECT AGE,NAME FROM customers;
+
+-- select view
+SELECT * FROM customers_VIEW ;
