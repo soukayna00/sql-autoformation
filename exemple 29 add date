@@ -1,0 +1,4 @@
+-- add date pour ajouter les date
+SELECT DATE_ADD('1998-01-02', INTERVAL 31 DAY);
+-- revoie la date d'ajourd'hui
+SELECT CURDATE();

@@ -1,0 +1,10 @@
+--commit enregistre tous les modifications depuis la derniere commit ou rollback
+DELETE FROM CUSTOMERS
+   WHERE AGE = 25;
+   USE tuto ;
+   COMMIT;
+   --rollback supprime les modifications
+   DELETE FROM CUSTOMERS
+   WHERE AGE = 25;
+   USE tuto;
+   ROLLBACK;
