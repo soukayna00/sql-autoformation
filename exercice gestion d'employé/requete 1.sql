@@ -23,6 +23,8 @@ INSERT INTO departements  (DNO,DNOM,DIR,VILLE)VALUES(2,'Production'  ,20,'Housto
 INSERT INTO departements (DNO,DNOM,DIR,VILLE)VALUES(3,'Developpement',40,'Boston');
 // reponse de requete 1: donnez la liste des employés ayant une commision
 
+-- donnez la liste des employé ayant une commision
 USE gestionemployé;
-SELECT ENOM ,COMM FROM employés
-GROUP BY ENOM ,COMM ;
+SELECT * FROM employés
+WHERE COMM IS NOT NULL;
+
